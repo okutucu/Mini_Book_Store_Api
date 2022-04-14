@@ -116,7 +116,7 @@ namespace Get_EndPoints.Controllers
                 command.BookId = id;
                 command.Model = updatedBook;
                 UpdateBookCommandValidator validator = new UpdateBookCommandValidator();
-                validator.ValidateAndThrow(command);
+                validator.ValidateAndThrow(command); 
                 command.Handle();
             }
             catch (Exception ex)
